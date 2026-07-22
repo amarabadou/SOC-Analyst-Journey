@@ -32,10 +32,10 @@ hands-on progress rather than just a list of completed courses.
 ## Progress Log
  ## Log Management
 
-**Task:** Identify the log type with destination port 52567 
+-**Task:** Identify the log type with destination port 52567 
 and source IP address 8.8.8.8
-**Approach:** Filtered/searched logs using 8.8.8.8, located the 
+-**Approach:** Filtered/searched logs using 8.8.8.8, located the 
 matching row (source: 8.8.8.8:53 → destination: 172.16.17.81:52567)
-**Result:** DNS
+-**Result:** DNS
 
 
