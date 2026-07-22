@@ -100,6 +100,31 @@ exact command line that executed the file.
 
 ---
 
+## Threat Intel
+
+### Investigation: Identifying Data Source for a Malicious Hash
+
+**Alert Summary**
+- **Platform:** LetsDefend – Threat Intel
+- **Question:** What is the data source of the "e1def6e8ab4b5bcb650037df234e2973" 
+  hash on the threat intel page?
+
+**Investigation**
+Searched the Threat Intel database (318,261 URLs, 2,690 IPs, 382 Hashes, 
+549 Domains) using the free text search field with the hash value 
+`e1def6e8ab4b5bcb650037df234e2973`.
+
+![Threat Intel search result for malicious hash](SCREENSHOTS/Threat_intel.png)
+
+**Findings**
+- Data Type: Hash
+- Tag: malware
+- Data Source: AbuseCH
+- Date: Oct, 11, 2020, 09:24 PM
+
+**Result:** AbuseCH
+
+---
  
 
 
