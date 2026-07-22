@@ -32,12 +32,26 @@ hands-on progress rather than just a list of completed courses.
 ## Progress Log
  ## Log Management
 
-- **Task:** Identify the log type with destination port 52567 
+- **Task1:** Identify the log type with destination port 52567 
 and source IP address 8.8.8.8
 - **Approach:** Filtered/searched logs using 8.8.8.8, located the 
 matching row (source: 8.8.8.8:53 → destination: 172.16.17.81:52567)
 - **Result:** DNS
 
 -  <img src="SCREENSHOTS/LOG_SEARCH1.png" width="800">
+
+ -----
+
+ ## Log Management
+
+- **Task2:** Identify the source IP address that requested the URL 
+'https://github.com/apache/flink/compare'
+- **Approach:** Searched logs filtering by Raw Log containing the 
+target URL, located the matching Proxy event
+- **Result:** 172.16.17.54
+
+-  <img src="SCREENSHOTS/log_searching.png" width="800">
+
+ 
 
 
