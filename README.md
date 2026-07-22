@@ -51,6 +51,55 @@ target URL, located the matching Proxy event
 
 -  <img src="SCREENSHOTS/log_searching.png" width="800">
 
+
+## Endpoint Security
+
+### Investigation 1: Identifying Device by File Hash
+
+**Alert Summary**
+- **Platform:** LetsDefend – Endpoint Security
+- **Question:** What is the hostname of the device where the "nmap" 
+  file with a hash value of "83e0cfc95de1153d405e839e53d408f5" is executed?
+
+**Investigation**
+Searched Endpoint Security using the file hash `83e0cfc95de1153d405e839e53d408f5`. 
+The search returned a single matching endpoint.
+
+![Hostname identified by file hash](SCREENSHOTS/ENDPOINT_search2.png)
+
+**Findings**
+- Hostname: `EricProd`
+- IP Address: 172.16.17.22
+- OS: Windows 10
+- Primary User: Eric
+
+**Result:** EricProd
+
+---
+
+### Investigation 2: Reconstructing a Full CMD Command
+
+**Alert Summary**
+- **Platform:** LetsDefend – Endpoint Security
+- **Question:** A "Ps1.hta" file was executed on a device with the 
+  hostname "Roberto". What is the complete CMD command?
+
+**Investigation**
+Searched Endpoint Security for the file `Ps1.hta`, located the matching 
+device (Roberto), then reviewed its Terminal History to find the 
+exact command line that executed the file.
+
+![Full command line in terminal history](SCREENSHOTS/ENDPOINT_search.png)
+
+**Findings**
+- Hostname: Roberto
+- IP Address: 172.16.17.38
+- Event Time: 05.03.2021 10:29
+
+**Result:** `C:/Windows/System32/mshta.exe C:/Users/roberto/Desktop/Ps1.hta`
+
+---
+
  
 
 
