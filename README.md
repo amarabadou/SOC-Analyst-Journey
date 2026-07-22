@@ -38,6 +38,6 @@ and source IP address 8.8.8.8
 matching row (source: 8.8.8.8:53 → destination: 172.16.17.81:52567)
 - **Result:** DNS
 
--  <img src="Screenshots/LOG_SEARCH1">
+-  <img src="SCREENSHOT/LOG_SEARCH1">
 
 
