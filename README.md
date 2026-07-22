@@ -42,7 +42,6 @@ matching row (source: 8.8.8.8:53 → destination: 172.16.17.81:52567)
 
  -----
 
- ## Log Management
 
 - **Task2:** Identify the source IP address that requested the URL 
 'https://github.com/apache/flink/compare'
